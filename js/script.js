@@ -33,7 +33,8 @@ $(function() {
   });
 
   // クリックしたらTOPへゆっくり戻る
-  $(".to-top").click(function() {
+  $(".to-top").click(function(e) {
+    e.preventDefault(); // ブラウザの「href="/" に移動する」という動きを止める そうすることでゆっくりスクロールを実行することができる
     $("html, body").animate({ scrollTop: 0 }, 900);
   });
 
