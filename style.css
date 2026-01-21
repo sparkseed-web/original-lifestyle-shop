@@ -222,6 +222,9 @@ header {
 }
 
 .header-nav .sns-icons {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
     margin-top: 30px;
     }
 
@@ -725,7 +728,7 @@ caption {
     }
 
     .sns-icons {
-        text-align: center;
+        justify-content: center;
     }
 
 
