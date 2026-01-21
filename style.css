@@ -140,9 +140,25 @@ h2 {
     letter-spacing: 0.1em;
 }
 
+i {
+    font-size: 56px;
+    transition: color 0.8s ease;
+}
+
+    i:hover {
+    color: var(--accent-light-color);
+}
+
+.fa-twitter {
+    width: max-content;
+}
 /* ------------------------------
     レイアウト：ヘッター
 ------------------------------ */
+
+
+
+
 
 
 /* ------------------------------
@@ -221,8 +237,9 @@ header {
     font-size: clamp(1rem, 2vw, 1.3rem);
 }
 
-.header-nav .sns-icons {
+.sns-icons {
     display: flex;
+    
     gap:clamp(60px, 3vw, 100px);
     margin-top: 30px;
     }
@@ -619,9 +636,8 @@ caption {
         display: none;
     }
 
-.footer-right-top {
-    text-align: center;
-    margin-top: 20px;
+footer .sns-icons {
+    justify-content: center;
 }
 
 .footer-right-top p{
@@ -631,19 +647,7 @@ caption {
     letter-spacing: 0.3em;
     line-height: 2em;
     margin-top: 30px;
-}
-
-    i {
-    font-size: 56px;
-    transition: color 0.8s ease;
-}
-
-    i:hover {
-    color: var(--accent-light-color);
-}
-
-.fa-twitter {
-    width: max-content;
+    text-align: center;
 }
 
 .footer-right-bottom {
@@ -724,7 +728,7 @@ caption {
         height: 7vh;
     }
 
-    .header-nav .sns-icons {
+    .sns-icons {
         justify-content: center;
     }
 
@@ -879,11 +883,7 @@ caption {
         font-size: 3rem;
     }
 
-    footer .sns-icons {
-        display: flex;
-        justify-content: center;
-        gap: 10vw;
-    }
+
     
 }
 
