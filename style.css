@@ -223,12 +223,16 @@ header {
 
 .header-nav .sns-icons {
     margin-top: 30px;
-    
-}
+    }
 
 .header-nav .sns-icons i {
     color: var(--icon-light-color);
 }
+
+.sns-icons a {
+    display: inline-block;
+}
+
 
 .brand-subtitle {
     display: inline-block;
@@ -635,7 +639,7 @@ caption {
     color: var(--accent-light-color);
 }
 
-.fa-instagram {
+.instagram {
     margin-right: 50px;
 }
 
@@ -695,6 +699,7 @@ caption {
     width: 100vw;
     max-width: none;
     padding: 0;
+    
 }
 
 .header-nav ul {
@@ -702,9 +707,9 @@ caption {
 }
 
 .header-nav-inner {
-   max-width: 400px;
-   margin: 0 auto;
-   margin-top: 8%;
+    margin-top: 8%;
+    justify-content:center;
+
 }
 
 .brand-subtitle {
@@ -718,6 +723,11 @@ caption {
         width: 7vh;
         height: 7vh;
     }
+
+    .sns-icons {
+        text-align: center;
+    }
+
 
     .btn{
         width: 5vw;
@@ -847,7 +857,6 @@ caption {
     .footer-nav-right.jp li:last-child {
         display: block;
     }
-
 
     .to-top{
     width: 45px;
