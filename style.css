@@ -223,8 +223,7 @@ header {
 
 .header-nav .sns-icons {
     display: flex;
-    justify-content: center;
-    gap: 5vw;
+    gap:clamp(60px, 3vw, 100px);
     margin-top: 30px;
     }
 
@@ -233,7 +232,8 @@ header {
 }
 
 .sns-icons a {
-    display: inline-block;
+    display:inline-block;
+    
 }
 
 
@@ -642,10 +642,6 @@ caption {
     color: var(--accent-light-color);
 }
 
-.instagram {
-    margin-right: 50px;
-}
-
 .fa-twitter {
     width: max-content;
 }
@@ -702,7 +698,9 @@ caption {
     width: 100vw;
     max-width: none;
     padding: 0;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .header-nav ul {
@@ -710,7 +708,6 @@ caption {
 }
 
 .header-nav-inner {
-    margin-top: 8%;
     justify-content:center;
 
 }
@@ -727,7 +724,7 @@ caption {
         height: 7vh;
     }
 
-    .sns-icons {
+    .header-nav .sns-icons {
         justify-content: center;
     }
 
